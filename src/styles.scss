@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900;1000&display=swap");
+
+:root {
+  --color-background-light: #303030;
+  --color-background-dark: #222222;
+
+  --color-text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Sofia Sans", sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background-light);
+}
