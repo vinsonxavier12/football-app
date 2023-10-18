@@ -1,8 +1,16 @@
 <div class="container">
-  <h1>Football App</h1>
-  <div class="card">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. A facere minima
-    nisi nulla placeat laborum modi sunt, officiis ipsum et nemo, quia ut
-    reiciendis doloremque eos magni esse obcaecati voluptatibus?
+  <h1 class="heading">Football App</h1>
+  <div
+    class="card"
+    *ngFor="
+      let team of ['F.C. Barcelona', 'Real Madrid', 'Atletico Madrid'];
+      index as i
+    "
+  >
+    <span class="home-team">{{ team | titlecase }}</span>
+    <span class="score">0 : 0</span>
+    <span class="away-team">Team {{ i + 1 }}</span>
   </div>
 </div>
+
+<pre>{{ fixtures | json }}</pre>

@@ -1,0 +1,17 @@
+<div class="container-whole">
+  <h1 class="heading__primary">All Leagues</h1>
+  <div class="container">
+    <div class="card" *ngFor="let league of allLeagues">
+      <div class="card__img">
+        <img [src]="league.image_path" alt="league-img" />
+      </div>
+      <h4 class="card__caption">
+        <span class="league-name">{{ league.name }}</span>
+      </h4>
+    </div>
+  </div>
+</div>
+
+<div class="cardu">
+  <div class="cardu2"></div>
+</div>

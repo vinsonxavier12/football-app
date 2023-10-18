@@ -1,0 +1,81 @@
+.card {
+  background-image: linear-gradient(
+    to top left,
+    rgba(#fff, 0.9),
+    rgba(#7ed56f, 0.6)
+  );
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  font-weight: bol d;
+  font-size: 1.4rem;
+  padding: 3.5rem 2rem;
+  position: relative;
+
+  &__img {
+    height: 25rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  }
+
+  &__caption {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: right;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 2rem;
+    width: 65%;
+  }
+
+  .league-name {
+    padding: 1rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(#28b485, 1),
+      rgba(#7ed56f, 1)
+    );
+    line-height: 1.5;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25rem);
+  gap: 2.5rem;
+}
+
+.heading__primary {
+  margin-bottom: 2rem;
+}
+
+.cardu {
+  width: 190px;
+  height: 254px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.cardu2 {
+  width: 190px;
+  height: 254px;
+  background-color: #1a1a1a;
+  transition: all 0.2s;
+}
+
+.cardu2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.cardu:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}

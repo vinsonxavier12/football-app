@@ -4,6 +4,13 @@
   --color-background-light: #303030;
   --color-background-dark: #222222;
 
+  --color-primary: #c3cc5a;
+  --color-primary-rgb: rgb(195, 204, 90);
+  --color-primary-dark: #28b485;
+  --color-primary-dark-rgb: rgb(40, 180, 133);
+  --color-primary-light: #7ed56f;
+  --color-primary-light-rgb: rgb(126, 213, 111);
+
   --color-text: #ffffff;
 }
 
@@ -22,4 +29,19 @@ body {
   font-family: "Sofia Sans", sans-serif;
   color: var(--color-text);
   background-color: var(--color-background-light);
+}
+
+// COMPONENTS
+
+.heading {
+  &__primary {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
+.container-whole {
+  width: 80%;
+  margin: 5rem auto;
 }
