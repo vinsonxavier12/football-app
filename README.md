@@ -26,14 +26,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+
      _                      _                 ____ _     ___
     / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
-
-/ △ \ | '_ \ / _` | | | | |/ _` | '**| | | | | | |
-/ \_** \| | | | (_| | |_| | | (\_| | | | |**_| |_** | |
-/_/ \_\_| |_|\_\_, |\__,_|\_|\__,_|\_| \_**\_|\_\_\_**|**_|
-|_**/
-
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+    
 Angular CLI: 15.1.6
 Node: 18.17.1
 Package Manager: npm 9.6.7
