@@ -10,9 +10,12 @@ import { UclComponent } from './components/ucl/ucl.component';
 import { MainComponent } from './components/main/main.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { PlayersComponent } from './components/players/players.component';
+import { NewsComponent } from './components/news/news.component';
 
 @NgModule({
-  declarations: [AppComponent, ScoresComponent, LeaguesComponent, UclComponent, MainComponent, SidebarComponent, HeaderComponent],
+  declarations: [AppComponent, ScoresComponent, LeaguesComponent, UclComponent, MainComponent, SidebarComponent, HeaderComponent, HomeComponent, PlayersComponent, NewsComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

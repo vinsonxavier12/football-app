@@ -1,1 +1,29 @@
-<p>sidebar works!</p>
+<div class="sidebar">
+  <div class="logo">Logo</div>
+  <ul class="nav__list">
+    <li class="nav__item" routerLink="home" routerLinkActive="nav__item--active">
+      <svg class="nav__icon">
+        <use xlink:href="/assets/icons/sprite.svg#icon-home"></use>
+      </svg>
+      Home
+    </li>
+    <li class="nav__item" routerLink="leagues" routerLinkActive="nav__item--active">
+      <svg class="nav__icon">
+        <use xlink:href="/assets/icons/sprite.svg#icon-map"></use>
+      </svg>
+      Leagues
+    </li>
+    <li class="nav__item" routerLink="players" routerLinkActive="nav__item--active">
+      <svg class="nav__icon">
+        <use xlink:href="/assets/icons/sprite.svg#icon-user"></use>
+      </svg>
+      Players
+    </li>
+    <li class="nav__item" routerLink="news" routerLinkActive="nav__item--active">
+      <svg class="nav__icon">
+        <use xlink:href="/assets/icons/sprite.svg#icon-message-square"></use>
+      </svg>
+      News
+    </li>
+  </ul>
+</div>

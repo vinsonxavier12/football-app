@@ -1,0 +1,77 @@
+@import "variables";
+
+:host {
+  grid-row: 1 / -1;
+}
+
+.sidebar {
+  background-color: rgba($color-black, .2);
+  box-shadow: 0 .5rem 1rem rgba($color-black, .1);
+  padding: 3rem 0;
+  height: 100%;
+}
+
+.logo {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.nav {
+  &__list {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: .5rem .75rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      translate: 0 -50%;
+      background-image: linear-gradient(to right, rgba($color-primary, .5), rgba($color-primary, .2));
+      border-radius: 1rem;
+      height: 1px;
+      z-index: -1;
+      opacity: 0;
+      transition: .3s;
+    }
+
+    &:hover:not(&--active)::after{
+      opacity: 1;
+      height: 100%;
+    }
+
+    &:focus:not(&--active)::after, &:focus-visible:not(&--active)::after {
+      opacity: 1;
+      height: 100%;
+      outline: none;
+    }
+
+    &--active {
+      background-image: linear-gradient(to right, rgba($color-primary, .5), rgba($color-primary, .2));
+      border-radius: 1rem;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    width: 2rem;
+    height: 2rem;
+  }
+}

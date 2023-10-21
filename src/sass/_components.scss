@@ -2,3 +2,11 @@
   width: 80%;
   margin: 5rem auto;
 }
+
+.card-transparent-bg {
+  background-color: rgba($color-black, .25);
+  min-height: 20rem;
+  border-radius: 3rem;
+  box-shadow: 0 1rem 2rem rgba($color-black, .2);
+  overflow: hidden;
+}

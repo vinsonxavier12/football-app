@@ -23,21 +23,13 @@
   max-width: 130rem;
   margin: 8rem auto;
   min-height: 50vh;
+  overflow: hidden;
 
   display: grid;
-  grid-template-columns: [full-start sidebar-start] 15rem [sidebar-end content-start] 1fr [content-end full-end];
+  grid-template-columns: [full-start sidebar-start] 20rem [sidebar-end content-start] 1fr [content-end full-end];
   grid-template-rows: 8rem 1fr;
 }
 
-.sidebar {
-  // background-color: lightblue;
-  grid-row: 1 / -1;
-}
-
-.header {
-  // background-color: lightcoral;
-}
-
 .content {
-  // background-color: yellowgreen;
+  margin: 4rem;
 }

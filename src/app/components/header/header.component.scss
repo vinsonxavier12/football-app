@@ -1,0 +1,84 @@
+@import "variables";
+
+.header {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current-tab {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.search {
+  color: $color-purple-light;
+  font-size: 1.4rem;
+  display: flex;
+  flex: 0 1 35%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__input {
+    background-color: rgba($color-black, .15);
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    border-radius: 10rem;
+    width: 90%;
+    margin-right: -3.5rem;
+    transition: .3s;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: $color-purple-light;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: unset;
+    // position: absolute;
+    // right: 2rem;
+  }
+
+  &__icon {
+    fill: $color-grey-light;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background-color: rgba($color-black, .15);
+  border: 1px solid rgba($color-black, .15);
+  padding: .5rem 1.5rem;
+  border-radius: 1rem;
+
+  .user {
+    &__photo {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+    }
+
+    &__name {
+      color: $color-grey-light;
+      font-size: 1.6rem;
+    }
+  }
+}
