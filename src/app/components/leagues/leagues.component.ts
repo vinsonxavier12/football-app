@@ -18,7 +18,14 @@ export class LeaguesComponent {
 
   getAllLeagues() {
     this.data.getAllLeagues().subscribe((res) => {
-      this.allLeagues = res.data;
+      console.log(res)
+      // this.allLeagues = res.data;
     });
+  }
+
+  getPlayer() {
+    this.data.getPlayer(276, 2019).subscribe((res => {
+      console.log(res)
+    }))
   }
 }
